@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using UsingViewComponents.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace UsingViewComponents.Components
 {
-    public class PocoViewComponents
+    public class PocoViewComponent
     {
         private ICityRepository repository;
 
-        public PocoViewComponents(ICityRepository repo)
+        public PocoViewComponent(ICityRepository repo)
         {
             repository = repo;
         }
